@@ -27,7 +27,7 @@ app.UseAuthorization();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapRazorPages();
-    endpoints.MapGet("/secret", context => context.Response.WriteAsync("sasi"));
+    endpoints.MapGet("/secret", context => context.Response.WriteAsync("test"));
 });
 
 app.Run();
